@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Haloo</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Send+Flowers&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lobster+Two&family=Send+Flowers&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Lobster Two', cursive;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 40px;
+    }
+
+    h1 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 3em;
+      color: rgb(37, 33, 37);
+    }
+
+    h2 {
+      font-family: 'Send Flowers', cursive;
+    }
+
+    video, audio, img {
+      max-width: 100%;
+      border-radius: 10px;
+    }
+
+    .media-block {
+      width: 100%;
+    }
+
+    hr {
+      border: none;
+      height: 2px;
+      background-color: #ddd;
+      margin: 10px 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Halaman HTML</h1>
+
+    <!-- VIDEO CERAMAH -->
+    <div class="media-block">
+      <h2>🎬 Video Ceramah Ustadz</h2>
+      <hr />
+      <video id="video" controls width="300" height="500" loop autoplay muted preload="auto">
+        <source src="ustad.mp4" type="video/mp4" />
+        <track kind="captions" src="ustad.vtt" srclang="en" label="English" />
+      </video>
+    </div>
+
+    <!-- AUDIO BTS -->
+    <div class="media-block">
+      <h2>🎵 BTS - Just One Day</h2>
+      <hr />
+      <audio id="audio" controls>
+        <source src="BTS -Just One Day.mp3" type="audio/mp3" />
+        Browser kamu tidak mendukung audio.
+      </audio>
+    </div>
+
+    <!-- GAMBAR USTADZ -->
+    <div class="media-block">
+      <h2>🖼️ Gambar Ustadz</h2>
+      <hr />
+      <picture id="uss.jpg">
+        <img src="uss.jpg" alt="Foto Ustadz" style="width: auto;" />
+      </picture>
+    </div>
+  </div>
+
+  <script src="jsprak5.js"></script>
+</body>
+</html>
